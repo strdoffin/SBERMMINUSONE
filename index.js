@@ -277,4 +277,4 @@ client.on("messageCreate",(message)=>{
 
 
 });  
-client.login("MTEwNjk2MTYxNzc3OTk3MDEzNQ.GgJs2v.oMIUaRi92fqmdshP-znpz1HHK4pOBfzK2lv8WM");
+client.login(key);
