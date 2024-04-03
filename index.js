@@ -5,7 +5,7 @@ const client = new Client({
     GatewayIntentBits.GuildVoiceStates,GatewayIntentBits.Guilds,GatewayIntentBits.GuildMessages,GatewayIntentBits.MessageContent
   ],
 });
-import {key} from '.key.js'
+
 const ms = require("ms")
 client.on("ready", () => {{
     console.log("Berm Join The World!")
@@ -71,7 +71,7 @@ client.on("messageCreate",(message)=>{
     const messageArray = message.content.split(" ");
     const arguements = messageArray.slice(1);
     const cmd = messageArray[0];
-    
+
    var i = 1;
    if (i === 1){return 
     message.channel.send("ว่างป่าว");
@@ -202,13 +202,13 @@ client.on("messageCreate",(message)=>{
     if(message.content === 'ขอรูปx10'){
         for(let i=0 ;i<10;i++){
             let photo = Math.floor(Math.random()*(a.length)) 
-            
+
             message.channel.send(a[photo])
         }
     }
     if (message.content === 'ขอรูป'){
         let photo = Math.floor(Math.random()*(a.length)) 
-        
+
         message.channel.send(a[photo])
     }
    if (message.content === 'เหี้ยเบิ้ม'){
@@ -222,8 +222,59 @@ client.on("messageCreate",(message)=>{
    }
    if (message.content === 'บอยแบนเขมร'){
     message.channel.send("https://tenor.com/view/%E0%B9%80%E0%B8%AB%E0%B8%A1%E0%B8%99-%E0%B9%80%E0%B8%84%E0%B8%A5%E0%B8%A1%E0%B9%82%E0%B8%9A%E0%B9%80%E0%B8%94%E0%B8%B5%E0%B8%A2-%E0%B9%80%E0%B8%9E%E0%B8%A5%E0%B8%87%E0%B9%80%E0%B8%82%E0%B8%A1%E0%B8%A3-%E0%B9%80%E0%B8%82%E0%B8%A1%E0%B8%A3-claimbodian-gif-15563924")
-}
-   
-   
+  }
+  if(message.content === 'ฉลาดมากเบิ้ม'){
+    message.channel.send("ขอบคุณที่แจ้งให้ทราบ")
+  }
+  if(message.content === 'เพิ่ม' || message.content.includes('เบิ้ม')){
+    message.channel.send("เคๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆ")
+  }
+  if(message.content === 'เกย์'){
+    message.channel.send("มึงสิเก")
+  }
+  if(message.content === 'กาก'){
+    message.channel.send("ไอกุส")
+  }
+  if(message.content === 'ก้น'){
+    message.channel.send("<@733313005739180073> เข้าดิสมาไอเก้")
+  }
+  if(message.content === 'หลง'){
+    message.channel.send("แม่มิงตายหรอไอตุ๊ส")
+  }
+  if(message.content === 'va'){
+    message.channel.send("เกมกากปัญญาอ่อน อย่าเล่น")
+  }
+  if(message.content.includes('http')){
+    message.channel.send('หยุดแปะลิงค์ได้แล้วไอหน้าหื')
+  }
+  if(message.content.includes('55')){
+    message.channel.send('ขำทำไมไอตุ๊ซ')
+  }
+  if(message.content.includes('เป๋ง')){
+    message.channel.send('กูชื่อเป้งไอโง่')
+  }
+  if(message.content.includes('เป้ง')){
+    message.channel.send('กูชื่อเป่งไอโง่')
+  }
+  if(message.content.includes('.')){
+    message.channel.send('จุดไมสแปมอ่อ')
+  }
+  if(message.content.includes('เกย์')){
+    message.channel.send('ไอพวกเกย์')
+  }
+  if(message.content.includes('/play')){
+    message.channel.send('บ้านมิงไม่มีyoutubeหรอไอสัส')
+  }
+  if(message.content === ('พี')){
+    message.channel.send('ฮึก…… ฮือ…… โฮ โฮ ฮือ …ฮือ ฮึก โฮ …… ฟืดดดดด ฮืออ ฟืดดดดด ฮือ……โฮฮฮ ฮึก ……ฮืออออออ ฮึก โฮฮึก…… ฮือ…  ฮือ …ฮือ ฮึก โฮ …… ฟืดด ฮึก ……ฮืออออออ ฮึก โฮฮึก…… ฮือ…… โฮ โฮ ฮือ …ฮือ ฮึก โฮ …… ฟืดดดดด ฮืออ ฟืดดดด')
+  }
+  if(message.content === ('สุรพลสีอะไร')){
+    message.channel.send('สีฟ้า <:pog:914406781772517386>')
+  }
+  if(message.content === 'วาโลกัน' || message.content.includes('valo') ){
+    message.channel.send("<@438527227286519810> <@733313005739180073> <@790462119338180640> <@414062293286912002> <@701731116717178890>")
+   }
+
+
 });  
-client.login(key);
+client.login("MTEwNjk2MTYxNzc3OTk3MDEzNQ.GgJs2v.oMIUaRi92fqmdshP-znpz1HHK4pOBfzK2lv8WM");
